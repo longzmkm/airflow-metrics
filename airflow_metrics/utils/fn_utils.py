@@ -2,7 +2,7 @@ import sys
 
 from functools import wraps
 
-from airflow import configuration as conf
+from airflow.configuration import conf
 from airflow.exceptions import AirflowConfigException
 from airflow.models import BaseOperator
 from airflow.utils.log.logging_mixin import LoggingMixin
