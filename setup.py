@@ -3,12 +3,12 @@ from setuptools import find_packages, setup
 
 setup(
     name='airflow-metrics',
-    version='0.1.5',
-    author='zylphrex',
-    author_email='zylphrex@gmail.com',
-    maintainer='zylphrex',
-    maintainer_email='zylphrex@gmail.com',
-    url='https://github.com/getsentry/airflow-metrics',
+    version='1.0.1',
+    author='tlzmkm',
+    author_email='tlzmkm@gmail.com',
+    maintainer='tlzmkm',
+    maintainer_email='tlzmkm@gmail.com',
+    url='https://github.com/longzmkm/airflow-metrics',
     description='Airflow plugin for automatically sending metrics from Airflow to Datadog',
     long_description=open('README.md').read(),
     long_description_content_type='text/markdown',
