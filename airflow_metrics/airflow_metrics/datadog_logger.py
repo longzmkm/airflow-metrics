@@ -2,7 +2,7 @@ from atexit import register, unregister
 from datetime import timedelta
 
 from airflow.exceptions import AirflowException
-from airflow.hooks.base_hook import BaseHook
+from airflow.hooks.base import BaseHook
 from airflow.utils.log.logging_mixin import LoggingMixin
 from datadog import initialize, ThreadStats
 

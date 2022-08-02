@@ -19,12 +19,12 @@ def capture_exception(ex):
         LOG.warning(str(ex))
 
 
-def enabled(metric='', default=True):
+def enabled(metric='datadog', default=True):
     if metric:
         metric = '{}_'.format(metric)
-    metric = 'airflow_metrics_{}enabled'.format(metric)
+    metric = 'statsd_{}enabled'.format(metric)
     try:
-        return conf.getboolean('airflow_metrics', metric)
+        return conf.getboolean('metrics', metric)
     except AirflowConfigException:
         return default
 
